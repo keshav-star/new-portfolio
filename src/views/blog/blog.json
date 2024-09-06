@@ -1,0 +1,29 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "How to setup react and vite",
+      "tags": ["react", "vite"],
+      "date": "2022-02-12",
+      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
+      "description": "In this post, I will show you how to setup react and vite in your local machine. It will be helpful for you to get started with react and vite. You can also use this template to build your own react and vite project. So, let's get started."
+    },
+    {
+      "id": 2,
+      "title": "How to add theme in daisyUi in react and vite",
+      "tags": ["react", "vite", "daisyui"],
+      "date": "2022-02-12",
+      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
+      "description": "In this post, I will show you how to add theme in daisyUi in react and vite. You can also use this template to build your own react and vite project. So, let's get started."
+    },
+    {
+      "id": 3,
+      "title": "Top 5 CSS Libraries in 2024",
+      "tags": ["react", "vite", "css", "tailwind"],
+      "date": "2022-02-12",
+      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
+      "description": "In this post, We will explore the top 5 CSS libraries in 2024. So, let's get started."
+    }
+  ],
+  "total": 2
+}
