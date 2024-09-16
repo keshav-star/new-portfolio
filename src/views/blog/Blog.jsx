@@ -8,6 +8,7 @@ const Blog = () => {
   const navigate = useNavigate();
 
   const randomBlog = blogData.blogs[Math.floor(Math.random() * blogData.total)];
+  
   return (
     <>
       <Navbar />
