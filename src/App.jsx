@@ -5,6 +5,8 @@ import Blog from "./views/blog/Blog";
 import About from "./views/about/About";
 import BlogDetail from "./views/blog/components/BlogDetail";
 import CreateBlog from "./views/blog/CreateBlog";
+import Works from "./views/works/Works";
+import Contact from "./views/contact/Contact";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/blogs/create-blog" element={<CreateBlog />} />
           <Route path="*" element={<Home />} />

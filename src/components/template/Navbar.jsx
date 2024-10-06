@@ -13,14 +13,14 @@ const Navbar = () => {
           <Link to={"/about"}>About</Link>
         </li>
         <li>
-          <Link>Works</Link>
+          <Link to={"/works"}>Works</Link>
         </li>
         <li>
           <Link to={"/blogs"}>Blog</Link>
         </li>
-        <li>
-          <Link>Contact</Link>
-        </li>
+        {/* <li>
+          <Link to={"/contact"}>Contact</Link>
+        </li> */}
         <li>
           <ThemeController />
         </li>

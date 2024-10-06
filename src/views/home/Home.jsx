@@ -10,7 +10,7 @@ const Home = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Software Engineer", "Freelancer"],
+      strings: ["Front-end Developer", "Freelancer"],
       typeSpeed: 100,
       loop: true,
       backSpeed: 60,
@@ -21,6 +21,7 @@ const Home = () => {
       typed.destroy();
     };
   }, []);
+
   return (
     <>
       <Navbar />
@@ -28,24 +29,34 @@ const Home = () => {
         <div className="flex flex-col items-start justify-center gap-9 my-40">
           <h1 className="text-[3vw] font-bold tracking-wide">
             Hi, I'm Keshav <br />
-            <div className="text-[2vw] font-sans font-semibold text-gray-300">
+            <div className="text-[2vw] font-sans font-semibold text-primary my-4">
               I'm a <span ref={el} />
             </div>
           </h1>
           <div className="flex items-center gap-10">
             <div className="flex items-center gap-5 text-xl ">
-              <BsLinkedin className="hover:scale-125 transition-all cursor-pointer" />
+              <BsLinkedin
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/keshavsandhu/")
+                }
+                className="hover:scale-125 transition-all cursor-pointer"
+              />
               <BsGithub
                 onClick={() => window.open("https://github.com/keshav-star")}
                 className="hover:scale-125 transition-all cursor-pointer"
               />
-              <SiGmail className="hover:scale-125 transition-all cursor-pointer" />
+              <SiGmail
+                onClick={() => window.open("mailto:keshavsandhu.me@gmail.com")}
+                className="hover:scale-125 transition-all cursor-pointer"
+              />
             </div>
             {/* <button className="btn shadow-secondary btn-sm">Contact Now</button> */}
-            <button className="button-57" role="button">
-              <span className="text">Connect With Me</span>
-              <span><Link to="/contact">Contact Now</Link></span>
-            </button>
+            <Link to="mailto:keshavsandhu.me@gmail.com">
+              <button className="button-57" role="button">
+                <span className="text">Connect With Me</span>
+                <span>Contact Now</span>
+              </button>
+            </Link>
           </div>
         </div>
         <img
@@ -55,16 +66,13 @@ const Home = () => {
         />
       </div>
       <div className="text-center">
-        <h1 className=" text-xl my-5">
+        {/* <h1 className=" text-xl my-5">
           Read More{" "}
-          <a href="" className="text-blue-500 hover:text-blue-300">
+          <Link to="/about" className="text-blue-500 hover:text-blue-300">
             About Me
-          </a>{" "}
-          or{" "}
-          <a href="" className="text-blue-500 hover:text-blue-300">
-            Schedule a Call Now
-          </a>{" "}
-        </h1>
+          </Link>{" "}
+          or{" "} <Link to="/contact" className="text-blue-500 hover:text-blue-300">Schedule a Call Now</Link>{" "}
+        </h1> */}
         <p>© 2024 Keshav Sandhu</p>
       </div>
     </>
@@ -72,3 +80,5 @@ const Home = () => {
 };
 
 export default Home;
+
+// Consolas, 'Courier New', monospace

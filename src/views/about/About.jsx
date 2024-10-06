@@ -10,15 +10,12 @@ const About = () => {
         <div className="border-l-8 mt-20 border-slate-500 px-4  my-10 h-fit">
           <h1 className="text-4xl">ABOUT ME</h1>
           <p className="text-xl mt-3 tracking-wide uppercase">
-            I am Keshav, a designing breathtaking websites and applications.
+            I am Keshav, a passionate frontend developer designing breathtaking
+            websites and applications.
           </p>
         </div>
         <div className="flex items-start gap-8">
-          <img
-            src="/pic.png"
-            className="size-60 border-4 border-gray-300"
-            alt=""
-          />
+          <img src="/me.jpg" className="w-44 border-4 border-gray-300" alt="" />
           <div className="">
             <p className="text-lg">
               A passionate frontend developer, I specialize in creating dynamic
@@ -29,21 +26,37 @@ const About = () => {
             </p>
             <div className="grid grid-cols-3">
               <div className="py-3">
-                <h4>BIRTHPLACE</h4>
-                <p>Karnal, India</p>
+                <p>RESIDENCE</p>
+                <h4>Karnal, India</h4>
               </div>
               <div className="py-3">
-                <h4>BIRTHPLACE</h4>
-                <p>Karnal, India</p>
+                <p>EXP</p>
+                <h4>2 Years</h4>
               </div>
               <div className="py-3">
-                <h4>BIRTHPLACE</h4>
-                <p>Karnal, India</p>
+                <p>EMAIL</p>
+                <h4>keshavsandhu.me@gmail.com</h4>
               </div>
             </div>
-            <button className="btn btn-warning">
-              <HiDownload className="text-xl"/> Download Resume
-            </button>
+            <div className="flex items-center flex-wrap gap-3">
+              <a
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1PnGxqWTwkdRhHOGOMJfk16Y5Fl48WM9-/view?usp=sharing"
+                  )
+                }
+                className="btn btn-warning text-lg"
+              >
+                <HiDownload className="text-xl" /> View Resume
+              </a>
+              <a
+              href="/resume keshav.pdf"
+                className="btn btn-warning text-lg"
+                download
+              >
+                <HiDownload className="text-xl" /> Download Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

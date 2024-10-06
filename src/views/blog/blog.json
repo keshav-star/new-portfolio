@@ -2,28 +2,31 @@
   "blogs": [
     {
       "id": 1,
-      "title": "How to setup react and vite",
-      "tags": ["react", "vite"],
-      "date": "2022-02-12",
-      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
-      "description": "In this post, I will show you how to setup react and vite in your local machine. It will be helpful for you to get started with react and vite. You can also use this template to build your own react and vite project. So, let's get started."
+      "title": "JavaScript Arrays: From Beginner to Advanced",
+      "tags": ["javascript", "array", "beginners"],
+      "date": "2024-09-27",
+      "imgUrl": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsk13g1bzz0c4pqg95yj4.png",
+      "description": "Whether you're just getting started or looking to master more advanced array techniques, this guide will walk you through everything you need to know about JavaScript arrays",
+      "clickUrl": "https://dev.to/keshav___dev/javascript-arrays-from-beginner-to-advanced-3670"
     },
     {
       "id": 2,
-      "title": "How to add theme in daisyUi in react and vite",
-      "tags": ["react", "vite", "daisyui"],
-      "date": "2022-02-12",
-      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
-      "description": "In this post, I will show you how to add theme in daisyUi in react and vite. You can also use this template to build your own react and vite project. So, let's get started."
+      "title": "Docker Cheat-sheet for beginners 🐳",
+      "tags": ["docker", "beginners", "cheat-sheet"],
+      "date": "2024-09-28",
+      "imgUrl": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxm0lscawycucd500c4t6.png",
+      "description": " In this guide, we will cover how to create a container, run it, and interact with it. Cheat sheet provided",
+      "clickUrl": "https://dev.to/keshav___dev/docker-cheat-sheet-for-beginners-18mo"
     },
     {
       "id": 3,
-      "title": "Top 5 CSS Libraries in 2024",
-      "tags": ["react", "vite", "css", "tailwind"],
-      "date": "2022-02-12",
-      "imgUrl":"https://i.ytimg.com/vi/WxE6li6eFPA/maxresdefault.jpg",
-      "description": "In this post, We will explore the top 5 CSS libraries in 2024. So, let's get started."
+      "title": "Best practices while pushing code to GitHub",
+      "tags": ["git", "github", "best-practices"],
+      "date": "2024-09-30",
+      "imgUrl": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkg5wt1vofi2zi05habqb.png",
+      "description": "Following best practices ensures that your code is clean, your history is maintainable, and your team can work together efficiently. Below are several key practices to adopt when pushing code to GitHub",
+      "clickUrl": "https://dev.to/keshav___dev/best-practices-while-pushing-code-to-github-5a7e"
     }
   ],
-  "total": 2
+  "total": 3
 }
