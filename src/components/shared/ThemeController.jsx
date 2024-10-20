@@ -3,7 +3,7 @@ import { HiOutlineMoon, HiSun } from "react-icons/hi";
 
 const ThemeController = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
   );
 
   const handleToggle = (e) => {
