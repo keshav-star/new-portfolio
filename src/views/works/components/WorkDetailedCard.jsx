@@ -1,10 +1,10 @@
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-export const WorkDetailedCard = ({ work, className = "" }) => {
+const WorkDetailedCard = ({ work, className = "" }) => {
   const { name, url, imgUrl, githubUrl, description, techs } = work;
   return (
-    <div className="work-card w-96">
+    <div className={`work-card w-96 ` + className}>
       <div className="work-card-1"></div>
       <div className="work-card-2"></div>
       {/* COntent div */}
@@ -14,7 +14,12 @@ export const WorkDetailedCard = ({ work, className = "" }) => {
         {/* Tech Used */}
         <div className="flex items-center justify-center gap-4">
           {techs.map((tech) => (
-            <div className="badge badge-outline capitalize p-2 py-3 my-2 text-xs">{tech}</div>
+            <div
+              key={tech}
+              className="badge badge-outline capitalize p-2 py-3 my-2 text-xs"
+            >
+              {tech}
+            </div>
           ))}
         </div>
         {/* Action Buttons */}
@@ -68,7 +73,7 @@ export const WorkDetailedCard = ({ work, className = "" }) => {
     //   </div>
   );
 };
-
+export default WorkDetailedCard;
 // <div
 //   key={name}
 //   className={`border-4 border-neutral relative hover:border-neutral border-opacity-60 transition-all duration-300 group rounded cursor-pointer my-6 h-full `}

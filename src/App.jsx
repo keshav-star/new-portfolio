@@ -7,6 +7,7 @@ import BlogDetail from "./views/blog/components/BlogDetail";
 import CreateBlog from "./views/blog/CreateBlog";
 import Works from "./views/works/Works";
 import Contact from "./views/contact/Contact";
+import 'animate.css';
 
 const App = () => {
   return (

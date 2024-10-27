@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/template/Navbar";
-import { WorkDetailedCard } from "./components/WorkDetailedCard";
+import WorkDetailedCard from "./components/WorkDetailedCard";
 
 const works = [
   {
@@ -70,7 +70,7 @@ const Works = () => {
   return (
     <>
       <Navbar />
-      <div className="md:px-20 py-10">
+      <div className=" md:px-10 lg:px-20 py-10">
         <p className="text-4xl font-semibold font-mono text-center">My Works</p>
         {/* <div className="w-full flex items-center justify-center gap-2">
           {categories.map((category) => {
@@ -89,6 +89,8 @@ const Works = () => {
         <div className="flex flex-wrap justify-between md:gap-7 p-3 m-2 md:p-5">
           {works.map((work, index) => (
             <WorkDetailedCard
+              key={index}
+              className="animate__animated animate__zoomIn"
               work={work}
               // className={(index + 1) % 2 === 0 ? "md:mt-10" : "md:mt-0"}
             />

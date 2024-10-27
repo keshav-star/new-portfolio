@@ -61,7 +61,7 @@ const SmallCard = ({ data = [] }) => {
   };
 
   return (
-    <div className="card lg:card-side rounded-md bg-secondary-content cursor-pointer flex">
+    <div className="card lg:card-side rounded-md bg-secondary-content cursor-pointer flex animate__animated animate__zoomIn">
       <img src={data.imgUrl} alt="Album" width={220} className="" />
       <div className="card-body py-1 my-auto col-span-2 px-2">
         <small className="">

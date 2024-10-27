@@ -6,8 +6,8 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen mx-80">
-        <div className="border-l-8 mt-20 border-slate-500 px-4  my-10 h-fit">
+      <div className="h-screen mx-20 xl:mx-80 ">
+        <div className="border-l-8 mt-20 border-slate-500 px-4  my-10 h-fit  animate__animated animate__zoomIn">
           <h1 className="text-4xl">ABOUT ME</h1>
           <p className="text-xl mt-3 tracking-wide uppercase">
             I am Keshav, a passionate frontend developer designing breathtaking
@@ -15,16 +15,20 @@ const About = () => {
           </p>
         </div>
         <div className="flex items-start gap-8">
-          <img src="/me.jpg" className="w-44 border-4 border-gray-300" alt="" />
-          <div className="">
-            <p className="text-lg">
+          <img src="/me.jpg" className="w-44 border-4 border-gray-300 animate__animated animate__zoomIn" alt="" />
+          <div
+            initial="hidden"
+            animate="visible"
+            className=""
+          >
+            <p className="text-lg animate__zoomIn animate__animated">
               A passionate frontend developer, I specialize in creating dynamic
               and user-centric experiences powered by modern web technologies.
               With a keen eye for design and a strong foundation in event-driven
               architecture, I bring creativity and functionality together.
               {/* I thrive on solving complex challenges to deliver seamless, responsive interfaces. My work is all about transforming innovative ideas into engaging digital solutions. */}
             </p>
-            <div className="grid grid-cols-3">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3">
               <div className="py-3">
                 <p>RESIDENCE</p>
                 <h4>Karnal, India</h4>
@@ -45,13 +49,13 @@ const About = () => {
                     "https://drive.google.com/file/d/1PnGxqWTwkdRhHOGOMJfk16Y5Fl48WM9-/view?usp=sharing"
                   )
                 }
-                className="btn btn-warning text-lg"
+                className="btn btn-warning text-lg animate__animated animate__zoomIn"
               >
                 <HiDownload className="text-xl" /> View Resume
               </a>
               <a
-              href="/resume keshav.pdf"
-                className="btn btn-warning text-lg"
+                href="/resume keshav.pdf"
+                className="btn btn-warning text-lg animate__animated animate__zoomIn"
                 download
               >
                 <HiDownload className="text-xl" /> Download Resume

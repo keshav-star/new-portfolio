@@ -4,8 +4,8 @@ import ThemeController from "../shared/ThemeController";
 const Navbar = () => {
   return (
     <div className="flex justify-between px-20 py-5 shadow-custom">
-      <div className="font-bold text-lg tracking-wider">Keshav Sandhu</div>
-      <ul className="flex gap-14 items-center font-semibold nav-list">
+      <div className="font-bold text-lg tracking-wider animate__animated animate__lightSpeedInLeft">Keshav Sandhu</div>
+      <ul className="flex gap-14 items-center font-semibold nav-list animate__animated animate__lightSpeedInRight">
         <li>
           <Link to={"/"}>Home</Link>
         </li>

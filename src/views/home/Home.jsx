@@ -39,20 +39,20 @@ const Home = () => {
                 onClick={() =>
                   window.open("https://www.linkedin.com/in/keshavsandhu/")
                 }
-                className="hover:scale-125 transition-all cursor-pointer"
+                className="hover:scale-125 transition-all cursor-pointer animate__animated animate__zoomIn"
               />
               <BsGithub
                 onClick={() => window.open("https://github.com/keshav-star")}
-                className="hover:scale-125 transition-all cursor-pointer"
+                className="hover:scale-125 transition-all cursor-pointer animate__animated animate__zoomIn"
               />
               <SiGmail
                 onClick={() => window.open("mailto:keshavsandhu.me@gmail.com")}
-                className="hover:scale-125 transition-all cursor-pointer"
+                className="hover:scale-125 transition-all cursor-pointer animate__animated animate__zoomIn"
               />
             </div>
             {/* <button className="btn shadow-secondary btn-sm">Contact Now</button> */}
             <Link to="mailto:keshavsandhu.me@gmail.com">
-              <button className="button-57" role="button">
+              <button className="button-57 animate__animated animate__zoomIn" role="button">
                 <span className="text">Connect With Me</span>
                 <span>Contact Now</span>
               </button>
