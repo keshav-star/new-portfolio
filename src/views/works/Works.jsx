@@ -70,7 +70,7 @@ const Works = () => {
   return (
     <>
       <Navbar />
-      <div className=" md:px-10 lg:px-20 py-10">
+      <div className=" md:px-10 lg:px-10 py-10">
         <p className="text-4xl font-semibold font-mono text-center">My Works</p>
         {/* <div className="w-full flex items-center justify-center gap-2">
           {categories.map((category) => {
@@ -86,7 +86,7 @@ const Works = () => {
           })}
         </div> */}
         {/* Work Card */}
-        <div className="flex flex-wrap justify-between md:gap-7 p-3 m-2 md:p-5">
+        <div className="flex flex-wrap justify-between gap-4 md:gap-6 p-3 m-2 md:p-5">
           {works.map((work, index) => (
             <WorkDetailedCard
               key={index}

@@ -25,11 +25,11 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex items-center ms-40  px-20 py-5 justify-between font-mono ">
+      <div className="flex items-center md:ms-40 px-10 md:px-20 py-5 justify-between font-mono ">
         <div className="flex flex-col items-start justify-center gap-9 my-40">
-          <h1 className="text-[3vw] font-bold tracking-wide">
+          <h1 className="text-lg md:text-[3vw] font-bold tracking-wide">
             Hi, I'm Keshav <br />
-            <div className="text-[2vw] font-sans font-semibold text-primary my-4">
+            <div className="text-lg md:text-[2vw] font-sans font-semibold text-primary my-4">
               I'm a <span ref={el} />
             </div>
           </h1>
@@ -51,7 +51,7 @@ const Home = () => {
               />
             </div>
             {/* <button className="btn shadow-secondary btn-sm">Contact Now</button> */}
-            <Link to="mailto:keshavsandhu.me@gmail.com">
+            <Link to="mailto:keshavsandhu.me@gmail.com" className="hidden sm:flex">
               <button className="button-57 animate__animated animate__zoomIn" role="button">
                 <span className="text">Connect With Me</span>
                 <span>Contact Now</span>
@@ -59,11 +59,11 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img
+        {/* <img
           className="select-none w-2/5 bg-blue-900 rounded-bl-badge"
           // src="/hero.svg"
           alt=""
-        />
+        /> */}
       </div>
       <div className="text-center">
         {/* <h1 className=" text-xl my-5">

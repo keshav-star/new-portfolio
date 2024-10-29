@@ -6,23 +6,23 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen mx-20 xl:mx-80 ">
-        <div className="border-l-8 mt-20 border-slate-500 px-4  my-10 h-fit  animate__animated animate__zoomIn">
-          <h1 className="text-4xl">ABOUT ME</h1>
-          <p className="text-xl mt-3 tracking-wide uppercase">
+      <div className="h-screen mx-5 md:mx-20 xl:mx-80 ">
+        <div className="md:border-l-8 mt-20 border-slate-500 md:px-4  my-10 h-fit  animate__animated animate__zoomIn">
+          <h1 className="text-2xl md:text-4xl">ABOUT ME</h1>
+          <p className="md:text-xl mt-3 tracking-wide uppercase">
             I am Keshav, a passionate frontend developer designing breathtaking
             websites and applications.
           </p>
         </div>
-        <div className="flex items-start gap-8">
+        <div className="flex flex-col md:flex-row items-start gap-8">
           <img src="/me.jpg" className="w-44 border-4 border-gray-300 animate__animated animate__zoomIn" alt="" />
           <div
             initial="hidden"
             animate="visible"
             className=""
           >
-            <p className="text-lg animate__zoomIn animate__animated">
-              A passionate frontend developer, I specialize in creating dynamic
+            <p className="md:text-lg animate__zoomIn animate__animated">
+              I specialize in creating dynamic
               and user-centric experiences powered by modern web technologies.
               With a keen eye for design and a strong foundation in event-driven
               architecture, I bring creativity and functionality together.

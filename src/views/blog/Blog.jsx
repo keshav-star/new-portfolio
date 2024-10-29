@@ -12,7 +12,7 @@ const Blog = () => {
   return (
     <>
       <Navbar />
-      <div className="px-20 py-5">
+      <div className=" px-5 md:px-20 py-5">
         <div className=" flex items-center justify-between">
           <h1 className="text-xl my-5 font-bold">Top Blog Posts</h1>
           {/* <button className="btn btn-primary btn-sm">
@@ -20,7 +20,7 @@ const Blog = () => {
           </button> */}
         </div>
         <div
-          className="grid grid-cols-5 gap-6 items-start"
+          className="grid md:grid-cols-5 gap-6 items-start"
           onClick={() => window.open(randomBlog.clickUrl, "_blank")}
         >
           {/* left */}
@@ -39,7 +39,7 @@ const Blog = () => {
             </div>
           </div>
           {/* right */}
-          <div className="grid grid-cols-1 gap-6 col-span-2">
+          <div className="grid md:grid-cols-1 gap-6 col-span-3 md:col-span-2">
             {blogData.blogs.map((data) => (
               <SmallCard key={data.id} data={data} />
             ))}
@@ -62,7 +62,7 @@ const SmallCard = ({ data = [] }) => {
 
   return (
     <div className="card lg:card-side rounded-md bg-secondary-content cursor-pointer flex animate__animated animate__zoomIn">
-      <img src={data.imgUrl} alt="Album" width={220} className="" />
+      <img src={data.imgUrl} alt="Album"  className="md:w-[220px] object-cover" />
       <div className="card-body py-1 my-auto col-span-2 px-2">
         <small className="">
           {new Date(data.date).toLocaleDateString("en-US", options)}
