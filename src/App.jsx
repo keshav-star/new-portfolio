@@ -21,7 +21,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/blogs/create-blog" element={<CreateBlog />} />
-          <Route path="*" element={<Home />} />
+          <Route>
+            <Route path="*" element={<Navigate to='/' replace />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
