@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./views/home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Blog from "./views/blog/Blog";
 import About from "./views/about/About";
 import BlogDetail from "./views/blog/components/BlogDetail";
