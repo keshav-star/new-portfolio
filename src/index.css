@@ -73,3 +73,25 @@ h4 {
 .work-card:hover .work-card-text {
   opacity: 1;
 }
+
+.namesvg svg path{
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 0.1;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: textAnimation 2s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation{
+  0%{
+    stroke-dashoffset: 140;
+  }
+  70%{
+    fill: transparent;
+  }
+  100%{
+    fill: #fff;
+    stroke-dasharray: 0;
+  }
+}
