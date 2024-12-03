@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/template/Navbar";
 import WorkDetailedCard from "./components/WorkDetailedCard";
 
 const works = [
@@ -69,7 +68,6 @@ const categories = [
 const Works = () => {
   return (
     <>
-      <Navbar />
       <div className=" md:px-10 lg:px-10 py-10">
         <p className="text-4xl font-semibold font-mono text-center">My Works</p>
         {/* <div className="w-full flex items-center justify-center gap-2">

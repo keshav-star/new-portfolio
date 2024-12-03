@@ -1,31 +1,33 @@
-.nav-list li:hover{
-    transform: translateY(-2px);
-    transition: 0.2s;
+.nav-list li:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
 }
-[data-theme="dark"] .shadow-custom{
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+[data-theme="dark"] .shadow-custom {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
 }
-[data-theme="light"] .shadow-custom{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+[data-theme="light"] .shadow-custom {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .drawer-card {
-    position: relative; /* Ensure the arrow is positioned relative to the card */
-    overflow: hidden;   /* Hide anything that overflows the card */
-    transition: background-color 1s ease; /* Optional: Add a transition for the background color */
-  }
-  
-.arrow {
-    position: absolute;
-    right: -40px; /* Start the arrow off-screen to the right */
-    top: 50%;     /* Center the arrow vertically */
-    transform: translateY(-50%); /* Correct the vertical centering */
-    transition: right 0.3s ease; /* Smooth transition of the arrow from right to left */
-  }
+  position: relative; /* Ensure the arrow is positioned relative to the card */
+  overflow: hidden; /* Hide anything that overflows the card */
+  transition: background-color 1s ease; /* Optional: Add a transition for the background color */
+}
 
-  .drawer-card:hover .arrow {
-    right: 20px; /* Move the arrow inside the card when hovered */
-  }
+.arrow {
+  position: absolute;
+  right: -40px; /* Start the arrow off-screen to the right */
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Correct the vertical centering */
+  transition: right 0.3s ease; /* Smooth transition of the arrow from right to left */
+}
+
+.drawer-card:hover .arrow {
+  right: 20px; /* Move the arrow inside the card when hovered */
+}
 
 /* CSS */
 .button-57 {
@@ -89,4 +91,17 @@
   transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  font-size: 24px;
+  font-weight: lighter;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  font-family: monospace;
 }

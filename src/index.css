@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none
 }
 
 /* .light {
@@ -76,7 +77,7 @@ h4 {
 
 .namesvg svg path{
   fill: transparent;
-  stroke: #fff;
+  stroke: theme(colors.base-content);
   stroke-width: 0.1;
   stroke-dasharray: 140;
   stroke-dashoffset: 140;
@@ -91,7 +92,7 @@ h4 {
     fill: transparent;
   }
   100%{
-    fill: #fff;
+    fill: theme(colors.base-content);
     stroke-dasharray: 0;
   }
 }
