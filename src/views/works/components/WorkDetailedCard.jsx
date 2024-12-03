@@ -8,7 +8,7 @@ const WorkDetailedCard = ({ work, className = "" }) => {
       <div className="work-card-1"></div>
       <div className="work-card-2"></div>
       {/* COntent div */}
-      <div className="work-card-text text-center mt-8 absolute px-10 z-10 transition-opacity duration-700 ease-in-out opacity-0">
+      <div className="work-card-text text-gray-200 text-center mt-8 absolute px-10 z-10 transition-opacity duration-700 ease-in-out opacity-0">
         <h4 className="text-lg">{name}</h4>
         <p className="text-xs my-2">{description}</p>
         {/* Tech Used */}

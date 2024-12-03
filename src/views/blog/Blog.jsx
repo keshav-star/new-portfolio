@@ -1,17 +1,13 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../../components/template/Navbar";
 import { HiArrowRight } from "react-icons/hi";
 import blogData from "./blog.json";
 
 const Blog = () => {
-  const navigate = useNavigate();
 
   const randomBlog = blogData.blogs[Math.floor(Math.random() * blogData.total)];
 
   return (
     <>
-      <Navbar />
       <div className=" px-5 md:px-20 py-5">
         <div className=" flex items-center justify-between">
           <h1 className="text-xl my-5 font-bold">Top Blog Posts</h1>
