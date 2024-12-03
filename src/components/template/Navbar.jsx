@@ -1,37 +1,61 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ThemeController from "../shared/ThemeController";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+const routes = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/about",
+    name: "About",
+  },
+  {
+    path: "/works",
+    name: "Works",
+  },
+  {
+    path: "/blogs",
+    name: "Blog",
+  },
+  // {
+  //   path: "/contact",
+  //   name: "Contact",
+  // },
+];
+const NavLinks = ({ className }) => {
+  const location = useLocation().pathname.split("/").pop();
+  return (
+    <ul
+      className={
+        "md:flex gap-14 items-center font-semibold nav-list " + className
+      }
+    >
+      {routes.map((route) => (
+        <li key={route.path}>
+          <Link
+            className={route.path === "/" + location && " text-primary"}
+            to={route.path}
+          >
+            {route.name}
+          </Link>
+        </li>
+      ))}
 
-const NavLinks = ({ className }) => (
-  <ul
-    className={
-      "md:flex gap-14 items-center font-semibold nav-list " + className
-    }
-  >
-    <li>
-      <Link to={"/"}>Home</Link>
-    </li>
-    <li>
-      <Link to={"/about"}>About</Link>
-    </li>
-    <li>
-      <Link to={"/works"}>Works</Link>
-    </li>
-    <li>
-      <Link to={"/blogs"}>Blog</Link>
-    </li>
-    {/* <li>
+      {/* <li>
     <Link to={"/contact"}>Contact</Link>
   </li> */}
-    <li>
-      <ThemeController />
-    </li>
-  </ul>
-);
+      <li>
+        <ThemeController />
+      </li>
+    </ul>
+  );
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation().pathname.split("/").pop();
 
   return (
     <div className="flex justify-between items-center px-10 md:px-20 py-5 shadow-custom">
@@ -49,9 +73,38 @@ const Navbar = () => {
           <NavLinks className={"flex-col flex gap-1"} />
         </div>
       </div>
-      <NavLinks className={"hidden"} />
+      {location === "single" ? (
+        <SingleNavLinks />
+      ) : (
+        <NavLinks className={"hidden"} />
+      )}
     </div>
   );
 };
 
 export default Navbar;
+
+const SingleNavLinks = ({ className }) => {
+  const location = useLocation().pathname.split("/").pop();
+  return (
+    <ul
+      className={
+        "md:flex gap-14 items-center font-semibold nav-list " + className
+      }
+    >
+      {routes.map((route) => (
+        <li key={route.path}>
+          <Link
+            className={route.path === "/" + location && " text-primary"}
+            to="/#about"
+          >
+            {route.name}
+          </Link>
+        </li>
+      ))}
+      <li>
+        <ThemeController />
+      </li>
+    </ul>
+  );
+};

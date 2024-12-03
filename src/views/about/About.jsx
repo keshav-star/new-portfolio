@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../../components/template/Navbar";
 import { HiDownload } from "react-icons/hi";
 
 const About = () => {
   return (
     <>
-      <Navbar />
-      <div className="h-screen mx-5 md:mx-20 xl:mx-80 ">
+      <div className="h-screen mx-5 md:mx-20 xl:mx-80 " id="about">
         <div className="md:border-l-8 mt-20 border-slate-500 md:px-4  my-10 h-fit  animate__animated animate__zoomIn">
           <h1 className="text-2xl md:text-4xl">ABOUT ME</h1>
           <p className="md:text-xl mt-3 tracking-wide uppercase">
@@ -15,7 +13,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-start gap-8">
-          <img src="/me.jpg" className="w-44 border-4 border-gray-300 animate__animated animate__zoomIn" alt="" />
+          <img src="/profilepic.jpeg" className="w-44 animate__animated animate__zoomIn" alt="" />
           <div
             initial="hidden"
             animate="visible"

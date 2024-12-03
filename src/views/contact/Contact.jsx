@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/template/Navbar";
 
 const ContactForm = () => (
   <div className="my-5 flex flex-col gap-4">
@@ -26,14 +25,12 @@ const ContactForm = () => (
       </svg>
       <input type="text" className="grow" placeholder="Username" />
     </label>
-    
   </div>
 );
 
 const Contact = () => {
   return (
     <>
-      <Navbar />
       <div className="ms-40 px-20 py-5">
         <div className="flex items-center gap-10 my-10">
           <div className="">
